@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Canvas for Three.js -->
+    <canvas id="canvas"></canvas>
+
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+        <div class="nav-brand">
+            Cosmic<span>AI</span>
+        </div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="auth-section">
+            <a href="#signup" class="signup-btn">Sign Up</a>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Welcome Section -->
+        <div class="welcome-section">
+            <h1>Welcome to Cosmic<span>AI</span></h1>
+            <p>Explore the future of artificial intelligence with our cutting-edge platform</p>
+            <button class="try-now-btn">Try Now</button>
+        </div>
+
+        <!-- Cards Section -->
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-brain"></i></div>
+                <h3>Neural Networks</h3>
+                <p>Advanced machine learning models powering natural conversations</p>
+                <button class="card-btn">Explore</button>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-rocket"></i></div>
+                <h3>API Integration</h3>
+                <p>Seamless integration with modern development stacks</p>
+                <button class="card-btn">Develop</button>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Security</h3>
+                <p>Enterprise-grade security and privacy protection</p>
+                <button class="card-btn">Secure</button>
+            </div>
+        </div>
+
+        <!-- Universe Container -->
+        <div id="universe-container"></div>
+    </div>
+
+    <!-- Scripts -->
+     <script src="script.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Canvas Background */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(to bottom, #111, #222);
+}
+
+/* Navigation Bar */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  background: rgba(17, 17, 17, 0.95);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #888;
+}
+
+.nav-brand span {
+  color: #555;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-links a {
+  color: #777;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #999;
+}
+
+.auth-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.signup-btn {
+  background: #555;
+  color: #222;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.signup-btn:hover {
+  background: #666;
+  transform: translateY(-2px);
+}
+
+/* Main Container */
+.container {
+  max-width: 1200px;
+  margin: 8rem auto 0;
+  padding: 2rem;
+}
+
+/* Cards Section */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  padding: 2rem 0;
+}
+
+.card {
+  background: #222;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border: 1px solid #333;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.card h3 {
+  color: #888;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.card p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.card-btn {
+  background: #555;
+  color: #222;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.card-btn:hover {
+  background: #666;
+}
+
+/* Universe Container */
+#universe-container {
+  height: 600px;
+  margin-top: 5rem;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #333;
+}
+
+/* Welcome Section */
+.welcome-section {
+  text-align: center;
+  padding: 4rem 0;
+  margin-bottom: 3rem;
+}
+
+.welcome-section h1 {
+  font-size: 3.2rem;
+  color: #888;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+}
+
+.welcome-section h1 span {
+  color: #555;
+}
+
+.welcome-section p {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.try-now-btn {
+  background: #555;
+  color: #222;
+  padding: 1.2rem 2.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.try-now-btn:hover {
+  background: #666;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+    margin-top: 6rem;
+  }
+
+  .main-nav {
+    padding: 1rem 5%;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+  }
+
+  .welcome-section h1 {
+    font-size: 2.4rem;
+  }
+
+  .welcome-section p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .try-now-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+}
